@@ -17,5 +17,8 @@ Route::get('/', function () {
 
 Route::auth();
 
+Route::get('auth/socialite/{provider}', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/callback/{provider}', 'Auth\AuthController@handleProviderCallback');
+
 Route::get('/home', 'HomeController@index');
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);

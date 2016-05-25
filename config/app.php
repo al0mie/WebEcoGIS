@@ -160,7 +160,8 @@ return [
          *  Users Service Providers..
          */
 
-        Toin0u\Geocoder\GeocoderServiceProvider::class
+        Toin0u\Geocoder\GeocoderServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
     /*
@@ -206,7 +207,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class
+        'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class
 
     ],
 
