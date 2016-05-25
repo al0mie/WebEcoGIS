@@ -65,15 +65,22 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">English <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    {{ \Config::get('language')[App::getLocale()] }}
+                                </a>
+
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Russian</a></li>
-                                    <li><a href="#">Ukraine</a></li>
+                                    @foreach (\Config::get('language') as $lang => $language)
+                                        @if ($lang != \App::getLocale())
+                                            <li>
+                                                <a href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
+                                            </li>
+                                        @endif
+                                    @endforeach
                                 </ul>
                             </li>
-                            <li>@if (\Auth::user()) <a href="#" >{!! \Auth::user()->name !!} </a>
+
+                            <li>@if (\Auth::user()) <a href="#">{!! \Auth::user()->name !!} </a>
                                 @else <a href="/login" class="active">Login</a>
                                 @endif
                             </li>
@@ -87,6 +94,7 @@
                 </div>
             </nav>
         </div>
+
         <div class="cd-main-header">
             <ul class="cd-header-buttons">
                 <li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
@@ -130,8 +138,8 @@
                     <h2>We Give the best solutions<br>for Improvement</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi est.</p>
                     @if (!\Auth::user())
-                    <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">Register
-                        Now</a>
+                        <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">Register
+                            Now</a>
                     @endif
                 </li>
                 <li>
@@ -382,6 +390,7 @@
         </div>
     </div>
 </div>
+
 <!--//footer-->
 <!--smooth-scrolling-of-move-up-->
 <script type="text/javascript">
