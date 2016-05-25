@@ -42,6 +42,7 @@
 </head>
 <body>
 <!--banner-->
+
 <div class="banner">
     <div class="header"><!--header-->
         <div class="container">
@@ -72,7 +73,10 @@
                                     <li><a href="#">Ukraine</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/login" class="active">Login</a></li>
+                            <li>@if (\Auth::user()) <a href="#" >{!! \Auth::user()->name !!} </a>
+                                @else <a href="/login" class="active">Login</a>
+                                @endif
+                            </li>
                         </ul>
 
                         <li><a href="#features" class="scroll">Features</a></li>
@@ -125,8 +129,10 @@
                 <li>
                     <h2>We Give the best solutions<br>for Improvement</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi est.</p>
+                    @if (!\Auth::user())
                     <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">Register
                         Now</a>
+                    @endif
                 </li>
                 <li>
                     <h3>Sollicitudin feugiat blandit<br>Quisque feugiat.</h3>
@@ -156,7 +162,7 @@
             </div>
             <section>
                 <div class="modal-body modal-spa">
-                   @include('auth.register')
+                    @include('auth.register')
                 </div>
             </section>
         </div>
