@@ -53,16 +53,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a  href="index.html">MAX</a></h1>
+                    <h1><a  href="index.html">EcoGIS</a></h1>
                 </div>
+
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#about" class="scroll">About</a></li>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Russian</a></li>
+                                    <li><a href="#">Ukraine</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                         <li><a href="#features" class="scroll">Features</a></li>
-                        <li><a href="#team" class="scroll">Team</a></li>
-                        <li><a href="#portfolio" class="scroll">Portfolio</a></li>
                         <li><a href="#contact" class="scroll">Contact Us</a></li>
                     </ul>
                     <div class="clearfix"> </div>
@@ -256,234 +264,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </div>
 <!--//about-->
-<!--team-->
-<div class="team" id="team">
-    <div class="container">
-        <div class="title">
-            <h3>Our Team</h3>
-            <p>Duis euismod massa ut sem fringilla blandit. Proin vel enim nec ipsum finibus. </p>
-        </div>
-        <div class="team-row">
-            <div class="col-md-3 team-grids">
-                <img class="img-responsive" src="images/img1.jpg" alt="">
-                <div class="captn">
-                    <h4>Edwards Doe</h4>
-                    <p>Founder</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="#"> </a></li>
-                            <li><a href="#" class="fb"> </a></li>
-                            <li><a href="#" class="gp"> </a></li>
-                            <li><a href="#" class="drb"> </a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 team-grids">
-                <img class="img-responsive" src="images/img2.jpg" alt="">
-                <div class="captn">
-                    <h4>Laura Hill</h4>
-                    <p>Lead Manager</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="#"> </a></li>
-                            <li><a href="#" class="fb"> </a></li>
-                            <li><a href="#" class="gp"> </a></li>
-                            <li><a href="#" class="drb"> </a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 team-grids">
-                <img class="img-responsive" src="images/img3.jpg" alt="">
-                <div class="captn">
-                    <h4>Christopher</h4>
-                    <p>Lead Manager</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="#"> </a></li>
-                            <li><a href="#" class="fb"> </a></li>
-                            <li><a href="#" class="gp"> </a></li>
-                            <li><a href="#" class="drb"> </a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 team-grids">
-                <img class="img-responsive" src="images/img4.jpg" alt="">
-                <div class="captn">
-                    <h4>Mark Sophia</h4>
-                    <p>Lead Manager</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="#"> </a></li>
-                            <li><a href="#" class="fb"> </a></li>
-                            <li><a href="#" class="gp"> </a></li>
-                            <li><a href="#" class="drb"> </a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!--//team-->
-<!--portfolio-->
-<div id="portfolio" class="portfolio">
-    <div class="container">
-        <div class="title">
-            <h3>Portfolio</h3>
-            <p>Duis euismod massa ut sem fringilla blandit. Proin vel enim nec ipsum finibus. </p>
-        </div>
-        <div class="gallery_gds">
-            <ul class="simplefilter">
-                <li class="active" data-filter="all">All</li>
-                <li data-filter="1">Category 1</li>
-                <li data-filter="2">Category 2</li>
-                <li data-filter="3">Category 3</li>
-            </ul>
-            <div class="filtr-container">
-                <div class="col-md-4 filtr-item" data-category="1, 4" data-sort="Busy streets">
-                    <div class="hover ehover14">
-                        <a href="images/g1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-                            <img src="images/g1.jpg" alt="" class="img-responsive" />
-                            <div class="overlay">
-                                <h4>Portfolio</h4>
-                                <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 filtr-item" data-category="2, 3" data-sort="Luminous night">
-                    <div class="hover ehover14">
-                        <a href="images/g2.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-                            <img src="images/g2.jpg" alt="" class="img-responsive" />
-                            <div class="overlay">
-                                <h4>Portfolio</h4>
-                                <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 filtr-item" data-category="1, 4" data-sort="City wonders">
-                    <div class="hover ehover14">
-                        <a href="images/g3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-                            <img src="images/g3.jpg" alt="" class="img-responsive" />
-                            <div class="overlay">
-                                <h4>Portfolio</h4>
-                                <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 filtr-item" data-category="3, 4" data-sort="Industrial site">
-                    <div class="hover ehover14">
-                        <a href="images/g4.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-                            <img src="images/g4.jpg" alt="" class="img-responsive" />
-                            <div class="overlay">
-                                <h4>Portfolio</h4>
-                                <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 filtr-item" data-category="3" data-sort="In production">
-                    <div class="hover ehover14">
-                        <a href="images/g5.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-                            <img src="images/g5.jpg" alt="" class="img-responsive" />
-                            <div class="overlay">
-                                <h4>Portfolio</h4>
-                                <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
-                    <div class="hover ehover14">
-                        <a href="images/g6.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-                            <img src="images/g6.jpg" alt="" class="img-responsive" />
-                            <div class="overlay">
-                                <h4>Portfolio</h4>
-                                <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--//portfolio-->
-<!--skills-->
-<div class="skills">
-    <div class="container">
-        <div class="title">
-            <h3>Skills</h3>
-            <p>Duis euismod massa ut sem fringilla blandit. Proin vel enim nec ipsum finibus. </p>
-        </div>
-        <div class="skills-row">
-            <div class="col-md-6 skills-left">
-                <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-                    <ul id="myTab" class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">History</a></li>
-                        <li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab" aria-controls="carl">Our Goal</a></li>
-                        <li role="presentation"><a href="#james" role="tab" id="james-tab" data-toggle="tab" aria-controls="james">Achievements</a></li>
-                    </ul>
-                    <div id="myTabContent" class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-                            <div class="tabcontent-grids">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum lobortis. Fusce eu semper lacus, eget placerat mauris. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo sodales adipiscing. Praesent sit amet justo diam. Quisque sagittis egestas sem vitae vestibulum. Quisque nec lacus ornare, volutpat arcu in, lacinia dolor.</p>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
-                            <div class="tabcontent-grids">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum.</p>
-                                <ul>
-                                    <li><span class="glyphicon glyphicon-menu-right"></span> Sed tincidunt lorem sed </li>
-                                    <li><span class="glyphicon glyphicon-menu-right"></span> Excepteur sint occaecat </li>
-                                    <li><span class="glyphicon glyphicon-menu-right"></span> Duis aute irure dolor in </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="james" aria-labelledby="james-tab">
-                            <div class="tabcontent-grids">
-                                <p>Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. </p>
-                                <ul>
-                                    <li><span class="glyphicon glyphicon-menu-right"></span> Sed tincidunt lorem sed </li>
-                                    <li><span class="glyphicon glyphicon-menu-right"></span> Excepteur sint occaecat </li>
-                                    <li><span class="glyphicon glyphicon-menu-right"></span> Duis aute irure dolor in </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 skills-right bar_group">
-                <div class='bar_group__bar thin' label='Lorem ipsum &nbsp;&nbsp; 80%' value='200'></div>
-                <div class='bar_group__bar thin' label='Quis nostrud &nbsp;&nbsp; 100%' value='250'></div>
-                <div class='bar_group__bar thin' label='Sed do eiusmod &nbsp;&nbsp; 72%' value='180'></div>
-                <div class='bar_group__bar thin' label='Ut enim adnim &nbsp;&nbsp; 88%' value='220'></div>
-            </div>
-            <!--bar-js-->
-            <script src="js/bars.js"></script>
-            <!--bar-js-->
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!--//skills-->
+
 <!--testimonial-->
 <div class="testimonial">
     <div class="col-md-6 testi-left">
@@ -555,21 +336,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <h4>Contact Info</h4>
                 <div class="address-row">
                     <div class="col-md-2 address-left">
-                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-10 address-right">
-                        <h5>Visit Us</h5>
-                        <p>123 Fourth Avenue, SEATTLE WA 98104, USA </p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="address-row">
-                    <div class="col-md-2 address-left">
                         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     </div>
                     <div class="col-md-10 address-right">
                         <h5>Mail Us</h5>
-                        <p><a href="mailto:info@example.com"> mail@example.com</a></p>
+                        <p><a href="mailto:info@example.com">alex.mokrencko@yandex.ru</a></p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -579,7 +350,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                     <div class="col-md-10 address-right">
                         <h5>Call Us</h5>
-                        <p>+11 222 333 4444</p>
+                        <p>+77 777 77 7777</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -599,16 +370,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </div>
 <!--//contact-->
-<!--map-->
-<div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343829.1271629402!2d-122.61489066225299!3d47.681214398164556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aba3648f20b%3A0xc5c4dedaafcead17!2sSeattle%2C+WA+98104!5e0!3m2!1sen!2sin!4v1461914461629"></iframe>
-</div>
-<!--//map-->
 <!--footer-->
 <div class="footer">
     <div class="container">
         <div class="footer-left">
-            <p>© 2016 Max . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+            <p>© 2016 EcoGIS . All rights reserved</p>
         </div>
         <div class="footer-right social-icons">
             <ul>
