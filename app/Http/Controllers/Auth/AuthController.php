@@ -95,7 +95,6 @@ class AuthController extends Controller
 
         $authUser = $this->findOrCreateUser($user);
         \Auth::login($authUser);
-
         return \Redirect::to('home');
     }
 
