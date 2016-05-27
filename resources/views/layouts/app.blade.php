@@ -14,6 +14,7 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/custom_styles.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
 
@@ -55,6 +56,8 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/home') }}">Home</a></li>
+                <li><a href="/map_editor" class="active">Map editor</a></li>
+
             </ul>
 
             <!-- Right Side Of Navbar -->

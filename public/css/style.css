@@ -1985,137 +1985,175 @@ p {
     margin: 0 0.5em;
 }
 }
-@media(max-width:320px){
-.navbar-default .navbar-toggle {
-    margin: 1em 8em 1em 0;
-}
-.cd-header-buttons {
-    right: 5%;
-    top: -51px;
-}
-.banner-text {
-    width: 85%;
-}
-.banner-text p {
-    font-size: 0.87em;
-}
-.banner-text a.more {
-    font-size: 0.87em;
-    padding: 0.5em 0.8em;
-}
-.callbacks_tabs li {
-    margin: 0 0.1em;
-}
-.banner {
-    min-height: 320px;
-}
-.about, .team, .contact, .skills {
-    padding: 1.5em 0;
-}
-.title h3 {
-    width: 46%;
-    font-size: 2em;
-}
-.title h3:before {
-    left: 30%;
-    width: 50px;
-}
-.features, .portfolio {
-    padding: 1.5em 0;
-}
-.about-grids h4 {
-    margin: 1em 0 0.2em;
-}
-.title {
-    margin-bottom: 1em;
-}
-.features h4 {
-    font-size: 1.2em;
-}
-.features h5 {
-    font-size: 2.8em;
-}
-.features-grids {
-    width: 98%;
-}
-.features-right span.glyphicon {
-    margin-top: 0.2em;
-}
-.team-grids {
-    width: 90%;
-    padding: 0;
-}
-.nav-tabs li a {
-    padding: .4em 1em;
-}
-.ehover14 .overlay {
-    left: 18%;
-    top: 15%;
-}
-.about-grids:nth-child(2),.about-grids:nth-child(3), .about-grids:nth-child(4) {
-    margin-top: 1.5em;
-}
-.nav-tabs li a:after {
-    left: 27%;
-}
-.tab-content {
-    margin-top: 1em;
-}
-.nav-tabs li a:after {
-    left: 33%;
-    border-top: 6px solid;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    bottom: -7px;
-}
-.tab-content ul li {
-    font-size: 0.9em;
-}
-.bar_group__bar.thin {
-    margin-bottom: 1em;
-}
-.testimonial h4 {
-    font-size: 1.5em;
-}
-.testi-left p span {
-    width: 18px;
-    height: 18px;
-    background-size: cover;
-}
-.testi-right input[type="text"] {
-    margin: 1.5em 0 0.5em;
-}
-.testi-right-info {
-    padding: 1.5em;
-}
-.address-left,.address-right{
-    float: none;
-    text-align: center;
-}
-.address-right {
-    padding: 1em 0 0;
-}
-.address h4 {
-    font-size: 1.2em;
-    text-align: center;
-}
-.contact input[type="text"] {
-    font-size: 0.9em;
-}
-.contact-form {
-    margin-top: 1em;
-}
-.map iframe {
-    min-height: 150px;
-}
-.modal-dialog {
-    margin: 2em auto 0;
-}
-.bnr-modal label {
-    font-size: 1.2em;
-}
-.modal-body {
-    padding: 1em;
-}
+@media(max-width:320px) {
+    .navbar-default .navbar-toggle {
+        margin: 1em 8em 1em 0;
+    }
+
+    .cd-header-buttons {
+        right: 5%;
+        top: -51px;
+    }
+
+    .banner-text {
+        width: 85%;
+    }
+
+    .banner-text p {
+        font-size: 0.87em;
+    }
+
+    .banner-text a.more {
+        font-size: 0.87em;
+        padding: 0.5em 0.8em;
+    }
+
+    .callbacks_tabs li {
+        margin: 0 0.1em;
+    }
+
+    .banner {
+        min-height: 320px;
+    }
+
+    .about, .team, .contact, .skills {
+        padding: 1.5em 0;
+    }
+
+    .title h3 {
+        width: 46%;
+        font-size: 2em;
+    }
+
+    .title h3:before {
+        left: 30%;
+        width: 50px;
+    }
+
+    .features, .portfolio {
+        padding: 1.5em 0;
+    }
+
+    .about-grids h4 {
+        margin: 1em 0 0.2em;
+    }
+
+    .title {
+        margin-bottom: 1em;
+    }
+
+    .features h4 {
+        font-size: 1.2em;
+    }
+
+    .features h5 {
+        font-size: 2.8em;
+    }
+
+    .features-grids {
+        width: 98%;
+    }
+
+    .features-right span.glyphicon {
+        margin-top: 0.2em;
+    }
+
+    .team-grids {
+        width: 90%;
+        padding: 0;
+    }
+
+    .nav-tabs li a {
+        padding: .4em 1em;
+    }
+
+    .ehover14 .overlay {
+        left: 18%;
+        top: 15%;
+    }
+
+    .about-grids:nth-child(2), .about-grids:nth-child(3), .about-grids:nth-child(4) {
+        margin-top: 1.5em;
+    }
+
+    .nav-tabs li a:after {
+        left: 27%;
+    }
+
+    .tab-content {
+        margin-top: 1em;
+    }
+
+    .nav-tabs li a:after {
+        left: 33%;
+        border-top: 6px solid;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        bottom: -7px;
+    }
+
+    .tab-content ul li {
+        font-size: 0.9em;
+    }
+
+    .bar_group__bar.thin {
+        margin-bottom: 1em;
+    }
+
+    .testimonial h4 {
+        font-size: 1.5em;
+    }
+
+    .testi-left p span {
+        width: 18px;
+        height: 18px;
+        background-size: cover;
+    }
+
+    .testi-right input[type="text"] {
+        margin: 1.5em 0 0.5em;
+    }
+
+    .testi-right-info {
+        padding: 1.5em;
+    }
+
+    .address-left, .address-right {
+        float: none;
+        text-align: center;
+    }
+
+    .address-right {
+        padding: 1em 0 0;
+    }
+
+    .address h4 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .contact input[type="text"] {
+        font-size: 0.9em;
+    }
+
+    .contact-form {
+        margin-top: 1em;
+    }
+
+    .map iframe {
+        min-height: 150px;
+    }
+
+    .modal-dialog {
+        margin: 2em auto 0;
+    }
+
+    .bnr-modal label {
+        font-size: 1.2em;
+    }
+
+    .modal-body {
+        padding: 1em;
+    }
 }
 /*--//responsive-design---*/
