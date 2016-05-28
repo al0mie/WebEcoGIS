@@ -1,6 +1,7 @@
 /vendor
 /node_modules
 Homestead.yaml
-
+Procfile
+.env
 .idea/
 storage/debugbar/
