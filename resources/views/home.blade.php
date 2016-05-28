@@ -7,7 +7,9 @@
                 <div class="panel">
                     <div class="panel-heading">Welcome to WebEcoGIS</div>
                     @include('modal.form_create_project')
+                    @include('modal.form_add_DEM')
                     <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#create-project">Показать всплывающее окно</button>
+                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#add-dem">Показать всплывающее окно</button>
                     <div id="view-div"></div>
                     <script type="text/javascript">
                         require([

@@ -16,13 +16,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
     <link href="/css/custom_styles.css" rel="stylesheet">
+    <link href="/css/fileinput.min.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
 
     <!-- ArcGIS dependencies-->
     <link rel="stylesheet" href="https://js.arcgis.com/4.0beta3/esri/css/main.css">
     <script src="https://js.arcgis.com/4.0beta3/"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <style>
         body {
             font-family: 'Lato';
@@ -102,9 +103,10 @@
 @yield('content')
 
         <!-- JavaScripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
