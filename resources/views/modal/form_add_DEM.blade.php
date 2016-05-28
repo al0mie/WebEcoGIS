@@ -1,4 +1,4 @@
-<div id="create-project" class="modal fade">
+<div id="add-dem" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -41,10 +41,10 @@
                                             <label class="control-label col-sm-3 text-left" for="BminHour"><p
                                                         class="text-left">Bmin:</p></label>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="BminHour">
+                                                <input type="text" class="form-control" name="BminHour">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="BminMinutes">
+                                                <input type="text" class="form-control" name="BminMinutes">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
                                                 <input type="number" class="form-control" name="BminSeconds">
@@ -55,10 +55,10 @@
                                             <label class="control-label col-sm-3 text-left" for="LminHours"><p
                                                         class="text-left">Lmin:</p></label>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="LminHours">
+                                                <input type="text" class="form-control" name="LminHours">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="LminMinutes">
+                                                <input type="text" class="form-control" name="LminMinutes">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
                                                 <input type="number" class="form-control" name="LminSeconds">
@@ -83,7 +83,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-4 text-left" for="Ymin">Ymin, м</label>
                                         <div class="col-sm-8">
-                                            <input type="number" name="Ymin" class="form-control" id="Ymin">
+                                            <input type="email" name="Ymin" class="form-control" id="Ymin">
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                                     <label class="control-label col-sm-5 txt-left" for="sizeElem"><p
                                                                 class="text-left">Размер элемента h, м:</p></label>
                                                     <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="sizeElem"
+                                                        <input type="text" class="form-control" name="sizeElem"
                                                                id="sizeElem">
                                                     </div>
                                                 </div>
@@ -113,7 +113,7 @@
                                                                 class="text-left">Nx количество элементов по X:</p>
                                                     </label>
                                                     <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="XElem" id="XElem">
+                                                        <input type="text" class="form-control" name="XElem" id="XElem">
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -121,14 +121,14 @@
                                                                 class="text-left">Ny количество элементов по Y::</p>
                                                     </label>
                                                     <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="YElem" id="YElem">
+                                                        <input type="text" class="form-control" name="YElem" id="YElem">
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <label class="control-label col-sm-5 txt-left" for="maxHeight"><p
                                                                 class="text-left">Абсолютная высота z0, м:</p></label>
                                                     <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="maxHeight"
+                                                        <input type="text" class="form-control" name="maxHeight"
                                                                id="maxHeight">
                                                     </div>
                                                 </div>
@@ -151,6 +151,6 @@
 
                 </div>
             </form>
+        </div>
     </div>
-</div>
 </div>
