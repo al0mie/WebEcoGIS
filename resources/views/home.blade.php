@@ -6,6 +6,8 @@
             <div class="col-md-12">
                 <div class="panel">
                     <div class="panel-heading">Welcome to WebEcoGIS</div>
+                    @include('modal.form_create_project')
+                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Показать всплывающее окно</button>
                     <div id="view-div"></div>
                     <script type="text/javascript">
                         require([
