@@ -2,17 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Project;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 
 class ProjectController extends Controller
 {
-    /**s
+    /**
+     * project auth user
+     * @var
+     */
+    private $projects;
+
+    /**
      * HomeController constructor.
      */
     public function __construct()
     {
+        if (\Auth::check()) {
+            $this->projects = Project::where('user_id', \Auth::user()->id)->get();
+        }
     }
 
     /**
@@ -28,7 +39,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-
+        return view('project.index', array('projects' => $this->projects));
     }
 
     /**
@@ -36,7 +47,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-
+        return view('project.create');
     }
 
     /**
@@ -44,6 +55,7 @@ class ProjectController extends Controller
      */
     public function store()
     {
+        $data = Input::all();
     }
 
     /**
@@ -60,6 +72,8 @@ class ProjectController extends Controller
      */
     public function edit($id)
     {
+        $project = Project::find($id);
+        return view('project.edit', array('project' => $project));
     }
 
     /**
@@ -67,7 +81,7 @@ class ProjectController extends Controller
      */
     public function update($id)
     {
-
+        $data = Input::all();
     }
 
     /**
@@ -77,6 +91,7 @@ class ProjectController extends Controller
     public function destroy($id)
     {
         try {
+            Project::destroy($id);
         } catch (ModelNotFoundException $e) {
             return $this->redirectNotFound();
         }
