@@ -58,7 +58,8 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="checkbox">
-                                                <label><input type="checkbox" value="" name="changeXY">Поменять местами X и Y при импорте файлов</label>
+                                                <label><input type="checkbox" value="" name="changeXY">Поменять местами
+                                                    X и Y при импорте файлов</label>
                                             </div>
                                         </div>
                                     </div>
@@ -97,6 +98,6 @@
 
 <script>
     $("#file-0").fileinput({
-        'allowedFileExtensions' : ['jpg', 'png','gif'],
+        'allowedFileExtensions': ['jpg', 'png', 'gif'],
     });
 </script>
