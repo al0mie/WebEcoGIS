@@ -11,14 +11,40 @@
 |
 */
 
+
+/**
+ * Auth routes
+ */
+Route::auth();
+Route::get('auth/socialite/{provider}', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/callback/{provider}', 'Auth\AuthController@handleProviderCallback');
+
+/**
+ * Welcome page
+ */
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::auth();
-
-Route::get('auth/socialite/{provider}', 'Auth\AuthController@redirectToProvider');
-Route::get('auth/callback/{provider}', 'Auth\AuthController@handleProviderCallback');
-
+/**
+ * Home page
+ */
 Route::get('/home', 'HomeController@index');
+
+/**
+ * Language routes
+ */
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+
+Route::resource('projects', 'ProjectController', [
+    'except' => 'show',
+    'names' => [
+        'index' => 'project.index',
+        'create' => 'project.create',
+        'store' => 'project.store',
+        'show' => 'project.show',
+        'update' => 'project.update',
+        'edit' => 'project.edit',
+        'destroy' => 'project.destroy',
+    ],
+]);
