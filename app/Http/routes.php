@@ -26,25 +26,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/**
- * Home page
- */
-Route::get('/home', 'HomeController@index');
+
 
 /**
  * Language routes
  */
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
 
-Route::resource('projects', 'ProjectController', [
-    'except' => 'show',
-    'names' => [
-        'index' => 'project.index',
-        'create' => 'project.create',
-        'store' => 'project.store',
-        'show' => 'project.show',
-        'update' => 'project.update',
-        'edit' => 'project.edit',
-        'destroy' => 'project.destroy',
-    ],
-]);
+
+Route::group(['middleware' => App\Http\Middleware\Authenticate::class,], function () {
+
+    /**
+     * Home page
+     */
+    Route::get('/home', 'HomeController@index');
+
+    /**
+     * rest resource for projects
+     */
+    Route::resource('projects', 'ProjectController', [
+        'except' => 'show',
+        'names' => [
+            'index' => 'project.index',
+            'create' => 'project.create',
+            'store' => 'project.store',
+            'show' => 'project.show',
+            'update' => 'project.update',
+            'edit' => 'project.edit',
+            'destroy' => 'project.destroy',
+        ],
+    ]);
+});
