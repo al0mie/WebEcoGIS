@@ -1,7 +1,11 @@
-/vendor
 /node_modules
 Homestead.yaml
-Procfile
-.env
+Homestead.json
 .idea/
 storage/debugbar/
+.env
+composer.phar
+/vendor
+composer.lock
+/nbproject/
+_ide_helper.php
