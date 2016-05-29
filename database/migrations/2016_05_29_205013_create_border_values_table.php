@@ -12,7 +12,7 @@ class CreateBorderValuesTable extends Migration
      */
     public function up()
     {
-        Schema::create('border_values', function (Blueprint $table) {
+        Schema::create('border_settings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('project_id')->unsigned()->nullable();
             $table->enum('left_border', array('pereodic_conditions', 'hard_wall', 'free_wall'))->nullable();
@@ -23,7 +23,7 @@ class CreateBorderValuesTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('border_values', function (Blueprint $table) {
+        Schema::table('border_settings', function (Blueprint $table) {
             $table->foreign('project_id')->references('id')->on('projects')
                 ->onDelete('set null');
         });
