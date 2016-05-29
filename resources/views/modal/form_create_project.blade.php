@@ -32,11 +32,10 @@
                                     <div id="geoCoord">
                                         <div class="form-group">
                                             <div class="radio">
-                                                <label><input type="radio" name="coordType">Географические
+                                                <label> <input type="radio" name="coordType">Географические
                                                     координаты </label>
                                             </div>
                                         </div>
-                                        <br>
                                         <div class="form-group">
                                             <label class="control-label col-sm-3 text-left" for="BminHour"><p
                                                         class="text-left">Bmin:</p></label>
@@ -88,8 +87,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </fieldset>
                     <div class="row">
@@ -99,38 +96,36 @@
                                 <div class="control-group">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <div id="geoCoord">
-                                                <div class="row">
-                                                    <label class="control-label col-sm-5 txt-left" for="sizeElem"><p
-                                                                class="text-left">Размер элемента h, м:</p></label>
-                                                    <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="sizeElem"
-                                                               id="sizeElem">
-                                                    </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-5 txt-left" for="sizeElem"><p
+                                                            class="text-left">Размер элемента h, м:</p></label>
+                                                <div class="col-sm-6 geo-coord">
+                                                    <input type="number" class="form-control" name="sizeElem"
+                                                           id="sizeElem">
                                                 </div>
-                                                <div class="row">
-                                                    <label class="control-label col-sm-5 txt-left" for="XElem"><p
-                                                                class="text-left">Nx количество элементов по X:</p>
-                                                    </label>
-                                                    <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="XElem" id="XElem">
-                                                    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-5 txt-left" for="XElem"><p
+                                                            class="text-left">Nx количество элементов по X:</p>
+                                                </label>
+                                                <div class="col-sm-6 geo-coord">
+                                                    <input type="number" class="form-control" name="XElem" id="XElem">
                                                 </div>
-                                                <div class="row">
-                                                    <label class="control-label col-sm-5 txt-left" for="YElem"><p
-                                                                class="text-left">Ny количество элементов по Y::</p>
-                                                    </label>
-                                                    <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="YElem" id="YElem">
-                                                    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-5 txt-left" for="YElem"><p
+                                                            class="text-left">Ny количество элементов по Y::</p>
+                                                </label>
+                                                <div class="col-sm-6 geo-coord">
+                                                    <input type="number" class="form-control" name="YElem" id="YElem">
                                                 </div>
-                                                <div class="row">
-                                                    <label class="control-label col-sm-5 txt-left" for="maxHeight"><p
-                                                                class="text-left">Абсолютная высота z0, м:</p></label>
-                                                    <div class="col-sm-6 geo-coord">
-                                                        <input type="number" class="form-control" name="maxHeight"
-                                                               id="maxHeight">
-                                                    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-5 txt-left" for="maxHeight"><p
+                                                            class="text-left">Абсолютная высота z0, м:</p></label>
+                                                <div class="col-sm-6 geo-coord">
+                                                    <input type="number" class="form-control" name="maxHeight"
+                                                           id="maxHeight">
                                                 </div>
                                             </div>
                                         </div>
@@ -151,6 +146,6 @@
 
                 </div>
             </form>
+        </div>
     </div>
-</div>
 </div>
