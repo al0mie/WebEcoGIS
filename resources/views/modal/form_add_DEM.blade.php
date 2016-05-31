@@ -94,10 +94,10 @@
 </div>
 
 
-<script src="/js/fileinput.min.js"></script>
+{{--<script src="/js/fileinput.min.js"></script>--}}
 
-<script>
-    $("#file-0").fileinput({
-        'allowedFileExtensions': ['jpg', 'png', 'gif'],
-    });
-</script>
+{{--<script>--}}
+    {{--$("#file-0").fileinput({--}}
+        {{--'allowedFileExtensions': ['jpg', 'png', 'gif'],--}}
+    {{--});--}}
+{{--</script>--}}

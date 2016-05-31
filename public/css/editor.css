@@ -1,0 +1,32 @@
+
+
+#loader-cloak {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+    background: #ddd;
+}
+
+#map {
+    padding: 0;
+}
+
+.claro .dijitContentPane {
+    padding: 2px;
+    font-size: 12px;
+}
+
+.templatePicker {
+    border: none;
+}
+
+.templatePicker .itemLabel {
+    font-size: 11px;
+}
+
+.btn1 {
+    /*width: 96px;*/
+    padding: 4px;
+}
