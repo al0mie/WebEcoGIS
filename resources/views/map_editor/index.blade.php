@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <div class="claro">
         <div id="loader-cloak"></div>
         <div id="main" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline'"
@@ -10,7 +9,6 @@
 
             <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'left'"
                  style="width: 200px;overflow:hidden;">
-
 
                 <div id="pendingEditsPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-propos="region:'top'">
                     <button style="width:60%" id="refresh-feature-layers-btn" class="btn1">Refresh Layers</button>
