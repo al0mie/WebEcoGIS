@@ -79,7 +79,7 @@
                             </li>
 
                             <li>@if (\Auth::user()) <a href="#">{!! \Auth::user()->name !!} </a>
-                                @else <a href="/login" class="active">Login</a>
+                                @else <a href="/login">Login</a>
                                 @endif
                             </li>
                         </ul>
