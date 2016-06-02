@@ -14,7 +14,8 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
     <link href="/css/custom_styles.css" rel="stylesheet">
     <link href="/css/fileinput.min.css" rel="stylesheet">
 
@@ -56,8 +57,37 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/home') }}">Home</a></li>
-                <li><a href="/map_editor" class="active">Map editor</a></li>
+                {{--<li><a href="/map_editor" class="active">Map editor</a></li>--}}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Project <span class="caret"></span>
+                    </a>
 
+                    <ul class="dropdown-menu">
+                        <li><a href="">New project</a></li>
+                        <li><a href="">Open project</a></li>
+                        <li><a href="">Save project</a></li>
+                        <li><a href="">Prepare calculation</a></li>
+                        <li><a href="">Start calculation</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Project property</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Model <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="">Calculation properties</a></li>
+                        <li><a href="">Geometry of the computational domain</a></li>
+                        <li><a href="">Border conditions</a></li>
+                        <li><a href="">Physical factors</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Settings</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
