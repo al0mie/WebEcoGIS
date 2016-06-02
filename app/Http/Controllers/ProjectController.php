@@ -60,7 +60,7 @@ class ProjectController extends Controller
         $project = new Project();
         $project = $this->updateProperties($project, $data);
         $project->save();
-        dd($project);
+        return redirect()->route('project.show', ['id' => $project->id]);
     }
 
     /**
@@ -68,7 +68,8 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return view('project.show');
+        $project = Project::find($id);
+        return view('project.show', array('project' => $project));
     }
 
 

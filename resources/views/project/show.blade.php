@@ -16,12 +16,28 @@
             var $coordX = $('#coordX');
             var $coordY = $('#coordY');
             var $height = $('#height');
-            var step = 50;
+            var step = '{!! $project->size_element !!}';
+            var numberElementX = '{!! $project->number_elementX !!}';
+            var numberElementY = '{!! $project->number_elementY !!}';
+
+            @if ($project->coordinate_type == 'rectangle_type')
+                var minX = '{!! $project->coordinate_value_minX !!}}';
+                var minX = '{!! $project->coordinate_value_minY !!}}';
+            /**
+             * TODO: imlement geo coordinates
+             */
+            @elseif($project->coordinate_type == 'geographical_type')
+
+            @endif
+
             $('#project-container').on('mousemove', function (e) {
-                var posX = $(this).offset().left;
-                var posY = $(this).offset().top;
-                $coordX.val('X: ' + (parseInt(e.pageX - posX) * step));
-                $coordY.val('Y: ' + (parseInt(e.pageY - posY) * step));
+                var posX = $(this).offset().left ;
+                var posY = $(this).offset().top + $(this).height();
+                var coefX = $(this).width()/numberElementX;
+                var coefY = $(this).height()/numberElementY;
+
+                $coordX.val('X: ' + parseInt((e.pageX - posX)/coefX) * step);
+                $coordY.val('Y: ' + (parseInt((posY - e.pageY)/coefY) * step));
             });
         });
     </script>
