@@ -85,8 +85,8 @@
                             <button class="btn btn-error" type="button" data-dismiss="modal">{!! trans('modal_forms.close')  !!}</button>
                         </div>
                     </div>
-
                 </div>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
             </form>
         </div>
     </div>

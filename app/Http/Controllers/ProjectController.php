@@ -56,6 +56,7 @@ class ProjectController extends Controller
     public function store()
     {
         $data = Input::all();
+        dd($data);
     }
 
     /**

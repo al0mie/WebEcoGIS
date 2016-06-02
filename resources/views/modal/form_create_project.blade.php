@@ -5,7 +5,7 @@
                 <button class="close" type="button" data-dismiss="modal">×</button>
                 <h4 class="modal-title">{{ trans('modal_forms.create_new_project') }}</h4>
             </div>
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" action="/projects" method="POST">
                 <div class="modal-body">
                     <div class="form-group">
                         <label class="control-label col-sm-4 text-left" for="projectName"><p class="text-left">{{ trans('modal_forms.name_project') }}:</p></label>
@@ -111,7 +111,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label col-sm-5 txt-left" for="YElem"><p
-                                                            class="text-left">Ny {{ trans('modal_forms.number_element') }} Y::</p>
+                                                            class="text-left">Ny {{ trans('modal_forms.number_element') }} Y:</p>
                                                 </label>
                                                 <div class="col-sm-6 geo-coord">
                                                     <input type="number" class="form-control" name="YElem" id="YElem">
@@ -140,8 +140,8 @@
                             <button class="btn btn-error" type="button" data-dismiss="modal">{{ trans('modal_forms.close') }}</button>
                         </div>
                     </div>
-
                 </div>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
             </form>
         </div>
     </div>
