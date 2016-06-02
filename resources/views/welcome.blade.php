@@ -84,8 +84,8 @@
                             </li>
                         </ul>
 
-                        <li><a href="#features" class="scroll">Features</a></li>
-                        <li><a href="#contact" class="scroll">Contact Us</a></li>
+                        <li><a href="#features" class="scroll">{{ trans('welcome.features') }}</a></li>
+                        <li><a href="#contact" class="scroll">{{ trans('welcome.contact_us') }}</a></li>
 
                     </ul>
                     <div class="clearfix"></div>
@@ -136,21 +136,18 @@
                     <h2>We Give the best solutions<br>for Improvement</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi est.</p>
                     @if (!\Auth::user())
-                        <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">Register
-                            Now</a>
+                        <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">{{ trans('welcome.register_now') }}</a>
                     @endif
                 </li>
                 <li>
                     <h3>Sollicitudin feugiat blandit<br>Quisque feugiat.</h3>
                     <p>Duis euismod massa ut sem fringilla blandit ipsum.</p>
-                    <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">Register
-                        Now</a>
+                    <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">{{ trans('welcome.features') }}</a>
                 </li>
                 <li>
                     <h3>Nam erat purus, malesuada<br> Venenatis ut velit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi est.</p>
-                    <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">Register
-                        Now</a>
+                    <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">{{ trans('welcome.features') }}</a>
                 </li>
             </ul>
         </div>

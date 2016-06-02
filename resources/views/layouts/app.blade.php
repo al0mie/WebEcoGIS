@@ -56,38 +56,38 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/home') }}">Home</a></li>
+                <li><a href="{{ url('/home') }}">{{ trans('index.home') }}</a></li>
                 {{--<li><a href="/map_editor" class="active">Map editor</a></li>--}}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Project <span class="caret"></span>
+                        {{ trans('index.project') }} <span class="caret"></span>
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="">New project</a></li>
-                        <li><a href="">Open project</a></li>
-                        <li><a href="">Save project</a></li>
-                        <li><a href="">Prepare calculation</a></li>
-                        <li><a href="">Start calculation</a></li>
+                        <li><a href="">{{ trans('index.new_project') }}</a></li>
+                        <li><a href="">{{ trans('index.open_project') }}</a></li>
+                        <li><a href="">{{ trans('index.save_project') }}</a></li>
+                        <li><a href="">{{ trans('index.prepare_calculation') }}</a></li>
+                        <li><a href="">{{ trans('index.start_calculation') }}</a></li>
                     </ul>
                 </li>
 
-                <li><a href="">Project property</a></li>
+                <li><a href="">{{ trans('index.project_property') }}</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Model <span class="caret"></span>
+                        {{ trans('index.model') }} <span class="caret"></span>
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="">Calculation properties</a></li>
-                        <li><a href="">Geometry of the computational domain</a></li>
-                        <li><a href="">Border conditions</a></li>
-                        <li><a href="">Physical factors</a></li>
+                        <li><a href="">{{ trans('index.calculation_properties') }}</a></li>
+                        <li><a href="">{{ trans('index.geometry_of_the_computational_domain') }}</a></li>
+                        <li><a href="">{{ trans('index.border_conditions') }}</a></li>
+                        <li><a href="">{{ trans('index.physical_factors') }}</a></li>
                     </ul>
                 </li>
 
-                <li><a href="">Settings</a></li>
+                <li><a href="">{{ trans('index.settings') }}</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -110,8 +110,8 @@
                 </li>
                 <!-- Authentication Links -->
                 @if (Auth::guest())
-                    <li><a href="{{ url('/login') }}">Login</a></li>
-                    <li><a href="{{ url('/register') }}">Register</a></li>
+                    <li><a href="{{ url('/login') }}">{{ trans('index.login') }}</a></li>
+                    <li><a href="{{ url('/register') }}">{{ trans('index.register') }}</a></li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -119,7 +119,7 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>{{ trans('index.logout') }}</a></li>
                         </ul>
                     </li>
                 @endif
