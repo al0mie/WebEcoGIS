@@ -30,14 +30,14 @@
                                     <div id="geoCoord">
                                         <div class="form-group">
                                             <div class="radio">
-                                                <label> <input type="radio" name="coordType">{{ trans('modal_forms.geo_coord') }} </label>
+                                                <label> <input type="radio" name="coordType" checked value="geographical_type">{{ trans('modal_forms.geo_coord') }} </label>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-sm-3 text-left" for="BminHour"><p
+                                            <label class="control-label col-sm-3 text-left" for="BminHours"><p
                                                         class="text-left">Bmin:</p></label>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="BminHour">
+                                                <input type="number" class="form-control" name="BminHours">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
                                                 <input type="number" class="form-control" name="BminMinutes">
@@ -65,7 +65,7 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="radio">
-                                            <label><input type="radio" name="coordType">{{ trans('modal_forms.rectangle_coord') }}</label>
+                                            <label><input type="radio" name="coordType" value="rectangle_type">{{ trans('modal_forms.rectangle_coord') }}</label>
                                         </div>
                                     </div>
 

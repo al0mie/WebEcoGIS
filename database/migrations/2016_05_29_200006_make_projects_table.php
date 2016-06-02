@@ -18,8 +18,10 @@ class MakeProjectsTable extends Migration
             $table->string('name');
             $table->string('coordinate_transform')->nullable();
             $table->enum('coordinate_type', array('geographical_type', 'rectangle_type'))->nullable();
-            $table->string('coordinate_value_min')->nullable();
-            $table->string('coordinate_value_max')->nullable();
+            $table->string('coordinate_value_minX')->nullable();
+            $table->string('coordinate_value_minY')->nullable();
+            $table->string('coordinate_value_minB')->nullable();
+            $table->string('coordinate_value_minL')->nullable();
             $table->integer('size_element')->nullable();
             $table->integer('number_elementX')->nullable();
             $table->integer('number_elementY')->nullable();
