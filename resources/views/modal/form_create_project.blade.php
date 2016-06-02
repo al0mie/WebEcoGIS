@@ -10,7 +10,7 @@
                     <div class="form-group">
                         <label class="control-label col-sm-4 text-left" for="projectName"><p class="text-left">{{ trans('modal_forms.name_project') }}:</p></label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="projectName" name="projectName">
+                            <input type="text" class="form-control" id="projectName" name="projectName" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -37,13 +37,13 @@
                                             <label class="control-label col-sm-3 text-left" for="BminHours"><p
                                                         class="text-left">Bmin:</p></label>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="BminHours">
+                                                <input type="number" class="form-control" name="BminHours" value="0">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="BminMinutes">
+                                                <input type="number" class="form-control" name="BminMinutes" value="0">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="BminSeconds">
+                                                <input type="number" class="form-control" name="BminSeconds" value="0">
                                             </div>
                                         </div>
 
@@ -51,13 +51,13 @@
                                             <label class="control-label col-sm-3 text-left" for="LminHours"><p
                                                         class="text-left">Lmin:</p></label>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="LminHours">
+                                                <input type="number" class="form-control" name="LminHours" value="0">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="LminMinutes">
+                                                <input type="number" class="form-control" name="LminMinutes" value="0">
                                             </div>
                                             <div class="col-sm-3 geo-coord">
-                                                <input type="number" class="form-control" name="LminSeconds">
+                                                <input type="number" class="form-control" name="LminSeconds" value="0">
                                             </div>
                                         </div>
                                     </div>
@@ -72,14 +72,14 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-4 text-left" for="Xmin">Xmin, м</label>
                                         <div class="col-sm-8">
-                                            <input type="number" name="Xmin" class="form-control" id="Xmin">
+                                            <input type="number" name="Xmin" class="form-control" id="Xmin" value="1000">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-sm-4 text-left" for="Ymin">Ymin, м</label>
                                         <div class="col-sm-8">
-                                            <input type="number" name="Ymin" class="form-control" id="Ymin">
+                                            <input type="number" name="Ymin" class="form-control" id="Ymin" value="1000">
                                         </div>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
                                                             class="text-left">{{ trans('modal_forms.size_element') }} h, м:</p></label>
                                                 <div class="col-sm-6 geo-coord">
                                                     <input type="number" class="form-control" name="sizeElem"
-                                                           id="sizeElem">
+                                                           id="sizeElem" value="50">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -106,7 +106,7 @@
                                                             class="text-left">Nx {{ trans('modal_forms.number_element') }} X:</p>
                                                 </label>
                                                 <div class="col-sm-6 geo-coord">
-                                                    <input type="number" class="form-control" name="XElem" id="XElem">
+                                                    <input type="number" class="form-control" name="XElem" id="XElem" value="1000">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -114,7 +114,7 @@
                                                             class="text-left">Ny {{ trans('modal_forms.number_element') }} Y:</p>
                                                 </label>
                                                 <div class="col-sm-6 geo-coord">
-                                                    <input type="number" class="form-control" name="YElem" id="YElem">
+                                                    <input type="number" class="form-control" name="YElem" id="YElem" value="1000">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -122,7 +122,7 @@
                                                             class="text-left">{{ trans('modal_forms.absolute_height') }} z0, м:</p></label>
                                                 <div class="col-sm-6 geo-coord">
                                                     <input type="number" class="form-control" name="maxHeight"
-                                                           id="maxHeight">
+                                                           id="maxHeight" value="0">
                                                 </div>
                                             </div>
                                         </div>
