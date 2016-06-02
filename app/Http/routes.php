@@ -50,7 +50,6 @@ Route::group(['middleware' => App\Http\Middleware\Authenticate::class,], functio
      * rest resource for projects
      */
     Route::resource('projects', 'ProjectController', [
-        'except' => 'show',
         'names' => [
             'index' => 'project.index',
             'create' => 'project.create',
