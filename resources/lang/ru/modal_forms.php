@@ -16,6 +16,9 @@ return [
     'size_element' => 'Размер элемента',
     'absolute_height' => 'Абсолютная высота',
     'number_element' => 'Число элементов',
+    'save' => 'Сохранить',
+    'close' => 'Закрыть',
+
 
     /**
      * form to add dem

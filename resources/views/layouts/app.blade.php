@@ -34,6 +34,8 @@
     </style>
 </head>
 <body id="app-layout">
+@include('modal.form_create_project')
+@include('modal.form_add_DEM')
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -64,11 +66,12 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="">{{ trans('index.new_project') }}</a></li>
-                        <li><a href="">{{ trans('index.open_project') }}</a></li>
-                        <li><a href="">{{ trans('index.save_project') }}</a></li>
-                        <li><a href="">{{ trans('index.prepare_calculation') }}</a></li>
-                        <li><a href="">{{ trans('index.start_calculation') }}</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#create-project">{{ trans('index.new_project') }}</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#add-dem">{{ trans('index.open_project') }}</a>
+                        </li>
+                        <li><a href="#">{{ trans('index.save_project') }}</a></li>
+                        <li><a href="#">{{ trans('index.prepare_calculation') }}</a></li>
+                        <li><a href="#">{{ trans('index.start_calculation') }}</a></li>
                     </ul>
                 </li>
 
@@ -119,7 +122,8 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>{{ trans('index.logout') }}</a></li>
+                            <li><a href="{{ url('/logout') }}"><i
+                                            class="fa fa-btn fa-sign-out"></i>{{ trans('index.logout') }}</a></li>
                         </ul>
                     </li>
                 @endif
