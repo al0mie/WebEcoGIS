@@ -42,7 +42,7 @@ Route::group(['middleware' => App\Http\Middleware\Authenticate::class,], functio
     Route::get('/home', 'HomeController@index');
 
     /**
-     * Home page
+     * Editor page
      */
     Route::get('/map_editor', 'MapEditorController@index');
 
