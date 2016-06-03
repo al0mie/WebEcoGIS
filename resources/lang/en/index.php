@@ -17,5 +17,8 @@ return [
     'settings' => 'Settings',
     'login' => 'Login',
     'logout' => 'Logout',
-
+    'add' => 'Add',
+    'add_dem' => 'Add DEM',
+    'add_init_state' => 'Add init state',
+    'add_raster' => 'Add raster'
 ];

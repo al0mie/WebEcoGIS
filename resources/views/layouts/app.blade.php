@@ -66,12 +66,20 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="#" data-toggle="modal" data-target="#create-project">{{ trans('index.new_project') }}</a></li>
+                        <li><a href="#" data-toggle="modal"
+                               data-target="#create-project">{{ trans('index.new_project') }}</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#add-dem">{{ trans('index.open_project') }}</a>
                         </li>
                         <li><a href="#">{{ trans('index.save_project') }}</a></li>
                         <li><a href="#">{{ trans('index.prepare_calculation') }}</a></li>
                         <li><a href="#">{{ trans('index.start_calculation') }}</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{!! trans('index.add') !!}</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">{!! trans('index.add_dem') !!}</a></li>
+                                <li><a href="#">{!! trans('index.add_init_state') !!}</a></li>
+                                <li><a href="#">{!! trans('index.add_raster') !!}</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
@@ -96,6 +104,7 @@
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Language links -->
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         {{ \Config::get('language')[App::getLocale()] }}
@@ -135,8 +144,24 @@
 @yield('content')
 
         <!-- JavaScripts -->
+        <!-- JavaScripts -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 
+<script>
+    /**
+     * required for inner dropdown lists
+     */
+    (function ($) {
+        $(document).ready(function () {
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
