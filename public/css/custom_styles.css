@@ -1,8 +1,3 @@
-.view-div {
-    width: 100%;
-    height: 100%;
-}
-
 fieldset.scheduler-border {
     border: 1px groove #ddd !important;
     padding: 0 1.4em 1.4em 1.4em !important;
@@ -20,6 +15,12 @@ legend.scheduler-border {
     border-bottom: none;
 }
 
+.esri-view-root {
+    position: relative; !important;
+    height: 700px !important;
+    margin: 0;
+}
+
 #geoCoord .geo-coord {
     padding-right: 3px !important;
 }
@@ -31,8 +32,13 @@ html, body {
     margin: 0;
 }
 
+.navbar {
+    background: lightblue;
+    margin: 0;
+}
+
 #project-container {
-    background-color: #93A1A1;
+    background-color: lightblue;
     width: 100%;
     height: 90%;
     margin: 0 !important;
@@ -42,10 +48,6 @@ html, body {
 #project-area {
     height: 100%;
     width: 90%;
-}
-
-.navbar {
-    margin: 0;
 }
 
 #project-properties {
