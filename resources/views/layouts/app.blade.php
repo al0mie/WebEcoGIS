@@ -68,14 +68,14 @@
                     <ul class="dropdown-menu">
                         <li><a href="#" data-toggle="modal"
                                data-target="#create-project">{{ trans('index.new_project') }}</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#add-dem">{{ trans('index.open_project') }}</a>
+                        <li><a href="#">{{ trans('index.open_project') }}</a>
                         </li>
                         <li><a href="#">{{ trans('index.save_project') }}</a></li>
                         <li><a href="#">{{ trans('index.prepare_calculation') }}</a></li>
                         <li><a href="#">{{ trans('index.start_calculation') }}</a></li>
                         <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{!! trans('index.add') !!}</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">{!! trans('index.add_dem') !!}</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#add-dem">{!! trans('index.add_dem') !!}</a></li>
                                 <li><a href="#">{!! trans('index.add_init_state') !!}</a></li>
                                 <li><a href="#">{!! trans('index.add_raster') !!}</a></li>
                             </ul>
