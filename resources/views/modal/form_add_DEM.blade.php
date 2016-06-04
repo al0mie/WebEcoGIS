@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <label class="control-label">Select File</label>
-                                    <input id="file-0" type="file" class="file" data-show-preview="false" name="file">
+                                    <input id="loadMap" type="file" class="file" data-show-preview="false" name="file">
                                 </div>
                             </div>
                         </div>
@@ -93,10 +93,10 @@
 </div>
 
 
-{{--<script src="/js/fileinput.min.js"></script>--}}
+<script src="/js/fileinput.min.js"></script>
 
-{{--<script>--}}
-    {{--$("#file-0").fileinput({--}}
-        {{--'allowedFileExtensions': ['jpg', 'png', 'gif'],--}}
-    {{--});--}}
-{{--</script>--}}
+<script>
+    $("#loadMap").fileinput({
+        'allowedFileExtensions': ['jpg', 'png', 'gif']
+    });
+</script>
