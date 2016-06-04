@@ -72,7 +72,6 @@ class ProjectController extends Controller
         return view('project.show', array('project' => $project));
     }
 
-
     /**
      * @param $id
      */
@@ -98,6 +97,7 @@ class ProjectController extends Controller
     {
         try {
             Project::destroy($id);
+            return view('project.index');
         } catch (ModelNotFoundException $e) {
             return $this->redirectNotFound();
         }

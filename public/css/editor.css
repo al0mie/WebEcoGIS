@@ -1,32 +1,53 @@
-
-
-#loader-cloak {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    z-index: 999;
-    background: #ddd;
+html,body{height:100%;width:100%;margin:0;overflow:hidden;font-family: sans-serif;}
+#loader-cloak {height:100%;width:100%;margin:0;position:absolute;z-index:999;background: #ddd;}
+#map{
+    padding:0;
 }
-
-#map {
-    padding: 0;
+#header{
+    font-size: 1.1em;
+    padding-left: 1em;
+    padding-top:4px;
+    color:#660000;
 }
-
 .claro .dijitContentPane {
     padding: 2px;
     font-size: 12px;
 }
-
 .templatePicker {
     border: none;
 }
-
 .templatePicker .itemLabel {
     font-size: 11px;
 }
-
-.btn1 {
+.btn1
+{
     /*width: 96px;*/
     padding: 4px;
 }
+#connectivityIndicator,#storageInfo
+{
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+#connectivityIndicator 				{ color: white; background-color: #aaa; font-size: 16px;  }
+#connectivityIndicator.online 		{ background-color: #0C0; }
+#connectivityIndicator.offline  	{ background-color: #E00; }
+#connectivityIndicator.reconnecting { background-color: orange; }
+
+#pendingEdits {
+    border: 1px solid black;
+    overflow: scroll;
+    height: 400px;
+    margin: 0px;
+    list-style: none;
+    padding: 4px;
+}
+
+#pendingEdits li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dj_ie .infowindow .window .top .right .user .content { position: relative; }
+.dj_ie .simpleInfoWindow .content {position: relative;}
