@@ -59,7 +59,7 @@
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/home" class="active">Home</a></li>
+                        <li><a href="/home" class="active">{!!  trans('welcome.home') !!}</a></li>
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
@@ -79,7 +79,7 @@
                             </li>
 
                             <li>@if (\Auth::user()) <a href="#">{!! \Auth::user()->name !!} </a>
-                                @else <a href="/login">Login</a>
+                                @else <a href="/login">{!!  trans('welcome.login') !!}</a>
                                 @endif
                             </li>
                         </ul>
@@ -95,14 +95,10 @@
 
         <div class="cd-main-header">
             <ul class="cd-header-buttons">
-                <li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+
             </ul> <!-- cd-header-buttons -->
         </div>
-        <div id="cd-search" class="cd-search">
-            <form action="#" method="post">
-                <input name="Search" type="search" placeholder="Search...">
-            </form>
-        </div>
+
     </div>
     <!--//header-->
     <!--banner-text-->
@@ -133,20 +129,15 @@
         <div id="top" class="callbacks_container">
             <ul class="rslides" id="slider3">
                 <li>
-                    <h2>We Give the best solutions<br>for Improvement</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipi est.</p>
+                    <h2>{!! trans('welcome.we_give_the_best_solutions') !!}</h2>
+                    <p>{!! trans('welcome.try_to_start') !!}</p>
                     @if (!\Auth::user())
                         <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">{{ trans('welcome.register_now') }}</a>
                     @endif
                 </li>
                 <li>
-                    <h3>Sollicitudin feugiat blandit<br>Quisque feugiat.</h3>
-                    <p>Duis euismod massa ut sem fringilla blandit ipsum.</p>
-                    <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">{{ trans('welcome.features') }}</a>
-                </li>
-                <li>
-                    <h3>Nam erat purus, malesuada<br> Venenatis ut velit.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipi est.</p>
+                    <h3>Powerfull. Great. Amazing</h3>
+                    <p>{!! trans('welcome.try_to_start') !!}</p>
                     <a class="more hvr-bounce-to-right" href="#" data-toggle="modal" data-target="#myModal">{{ trans('welcome.features') }}</a>
                 </li>
             </ul>
@@ -176,36 +167,28 @@
 <div id="about" class="about">
     <div class="container">
         <div class="title">
-            <h3>About Us </h3>
-            <p>Duis euismod massa ut sem fringilla blandit. Proin vel enim nec ipsum finibus. </p>
+            <h3>{!! trans('welcome.about_us') !!} </h3>
+            <p> </p>
         </div>
         <div class="about-row">
             <div class="col-md-3 about-grids">
                 <span class="glyphicon glyphicon-stats effect-1" aria-hidden="true"></span>
-                <h4>Best Performance</h4>
-                <p>Itaque earum rerum hic tenetur a sapiente delectus
-                    reiciendis maiores alias consequatur aut</p>
+                <h4>{!! trans('welcome.best_performance') !!}</h4>
                 <h6></h6>
             </div>
             <div class="col-md-3 about-grids">
                 <span class="glyphicon glyphicon-user effect-1" aria-hidden="true"></span>
-                <h4>Online Advisors</h4>
-                <p>Itaque earum rerum hic tenetur a sapiente delectus
-                    reiciendis maiores alias consequatur aut</p>
+                <h4>{!! trans('welcome.online_advisors') !!}</h4>
                 <h6></h6>
             </div>
             <div class="col-md-3 about-grids">
                 <span class="glyphicon glyphicon-list-alt effect-1" aria-hidden="true"></span>
-                <h4>New Technologies</h4>
-                <p>Itaque earum rerum hic tenetur a sapiente delectus
-                    reiciendis maiores alias consequatur aut</p>
+                <h4>{!! trans('welcome.new_technologies') !!}</h4>
                 <h6></h6>
             </div>
             <div class="col-md-3 about-grids">
                 <span class="glyphicon glyphicon-check effect-1" aria-hidden="true"></span>
-                <h4>Security & Privacy</h4>
-                <p>Itaque earum rerum hic tenetur a sapiente delectus
-                    reiciendis maiores alias consequatur aut</p>
+                <h4>{!! trans('welcome.security_privacy') !!}</h4>
                 <h6></h6>
             </div>
             <div class="clerfix"></div>
@@ -217,13 +200,13 @@
 <div id="features" class="features">
     <div class="container">
         <div class="title">
-            <h3>Features</h3>
+            <h3>{!! trans('welcome.features') !!}</h3>
             <p>Duis euismod massa ut sem fringilla blandit. Proin vel enim nec ipsum finibus. </p>
         </div>
         <div class="features-row">
             <div class="col-md-4 features-grids">
                 <div class="features-left">
-                    <h4>Projects Done</h4>
+                    <h4>{!! trans('welcome.projects_done') !!}</h4>
                     <h5>5200 </h5>
                 </div>
                 <div class="features-right">
@@ -233,7 +216,7 @@
             </div>
             <div class="col-md-4 features-grids features-grids-mdl">
                 <div class="features-left">
-                    <h4>Visitors</h4>
+                    <h4>{!! trans('welcome.visitors') !!}</h4>
                     <h5>6000 </h5>
                 </div>
                 <div class="features-right">
@@ -243,8 +226,8 @@
             </div>
             <div class="col-md-4 features-grids">
                 <div class="features-left">
-                    <h4>Business Donor</h4>
-                    <h5>500 </h5>
+                    <h4>{!! trans('welcome.partners') !!}</h4>
+                    <h5>100 </h5>
                 </div>
                 <div class="features-right">
                     <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
@@ -312,7 +295,7 @@
     </div>
     <div class="col-md-6 testi-left testi-right">
         <div class="testi-right-info">
-            <h4>SUBSCRIBE</h4>
+            <h4>{!! trans('welcome.subscribe') !!}</h4>
             <form action="#" method="post">
                 <input type="text" name="Email" placeholder="Enter Your Email" required="">
                 <input type="submit" value="Submit">
@@ -326,7 +309,7 @@
 <div class="contact" id="contact">
     <div class="container">
         <div class="title">
-            <h3>Contact</h3>
+            <h3>{!! trans('welcome.contact') !!}</h3>
             <p>Duis euismod massa ut sem fringilla blandit. Proin vel enim nec ipsum finibus. </p>
         </div>
         <div class="contact-grids">
@@ -347,7 +330,7 @@
                         <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
                     </div>
                     <div class="col-md-10 address-right">
-                        <h5>Call Us</h5>
+                        <h5>{!! trans('welcome.call_us') !!}</h5>
                         <p>+77 777 77 7777</p>
                     </div>
                     <div class="clearfix"></div>
@@ -355,11 +338,11 @@
             </div>
             <div class="col-md-7 contact-form">
                 <form action="#" method="post">
-                    <input type="text" name="First Name" placeholder="First Name" required="">
-                    <input class="email" name="Last Name" type="text" placeholder="Last Name" required="">
-                    <input type="text" name="Number" placeholder="Mobile Number" required="">
+                    <input type="text" name="First Name" placeholder="{!! trans('welcome.first_name') !!}" required="">
+                    <input class="email" name="Last Name" type="text" placeholder="{!! trans('welcome.surname') !!}" required="">
+                    <input type="text" name="Number" placeholder="{!! trans('welcome.phone') !!}" required="">
                     <input class="email" name="Email" type="text" placeholder="Email" required="">
-                    <textarea name="Message" placeholder="Message" required=""></textarea>
+                    <textarea name="Message" placeholder="{!! trans('welcome.message') !!}" required=""></textarea>
                     <input type="submit" value="SUBMIT">
                 </form>
             </div>
@@ -372,7 +355,7 @@
 <div class="footer">
     <div class="container">
         <div class="footer-left">
-            <p>© 2016 EcoGIS . All rights reserved</p>
+            <p>© 2016 EcoGIS. {!! trans('welcome.all_rights_reserved') !!}</p>
         </div>
         <div class="footer-right social-icons">
             <ul>
