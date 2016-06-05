@@ -2,7 +2,6 @@
 
 return [
     'en' => 'English',
-    'ru' => 'Russian',
-    'ua' => 'Ukraine',
-
+    'ru' => 'Русский',
+    'ua' => 'Українська'
 ];
