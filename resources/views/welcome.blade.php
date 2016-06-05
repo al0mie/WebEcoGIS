@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a href="index.html">EcoGIS</a></h1>
+                    <h1><a href="/">EcoGIS</a></h1>
                 </div>
 
                 <!--navbar-header-->
@@ -368,7 +368,6 @@
         </div>
     </div>
 </div>
-
 <!--//footer-->
 <!--smooth-scrolling-of-move-up-->
 <script type="text/javascript">
@@ -413,5 +412,11 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/bootstrap.js"></script>
+
+@if ($errors->count())
+    <script>
+        $('#myModal').modal("show")
+    </script>
+@endif
 </body>
 </html>
