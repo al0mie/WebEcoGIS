@@ -97,7 +97,7 @@ class ProjectController extends Controller
     {
         try {
             Project::destroy($id);
-            return view('project.index');
+            return redirect()->route('project.index');
         } catch (ModelNotFoundException $e) {
             return $this->redirectNotFound();
         }
@@ -105,7 +105,6 @@ class ProjectController extends Controller
 
     private function updateProperties(&$project, $data)
     {
-
         $project->user_id = Auth::user()->id;
         $project->name = $data['projectName'];
         $project->coordinate_transform = $data['transformCoord'];

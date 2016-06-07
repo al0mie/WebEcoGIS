@@ -8,7 +8,8 @@
             <th>No</th>
             <th>{{ trans('project.index.name') }}</th>
             <th>{{ trans('project.index.date_create') }}</th>
-            <th class="text-center">{{ trans('project.index.action') }}</th>
+            <th>{{ trans('project.index.date_update') }}</th>
+            <th>{{ trans('project.index.action') }}</th>
             </thead>
             <tbody>
             <?php $no = 1 ?>
@@ -17,12 +18,21 @@
                     <td>{!! $no !!}</td>
                     <td>{!! $project->name !!}</td>
                     <td>{!! $project->created_at !!}</td>
-                    <td class="text-center">
-                        <a href="{!! route('project.edit', $project->id) !!}">Edit</a>
-                        {!! Form::open(array('route' => array('project.destroy', $project->id), 'method' => 'delete')) !!}
-                            <button class='btn btn-danger pull-right btn-xs' type="submit">Delete Template</button>
-                        {!! Form::close() !!}
-
+                    <td>{!! $project->updated_at !!}</td>
+                    <td>
+                        <div class="">
+                            <a href="{!! route('project.edit', $project->id) !!}"
+                               class="btn btn-default  btn-md">{!! trans('project.edit') !!}</a>
+                        </div>
+                        <div class="">
+                            <a href="{!! route('project.show', $project->id) !!}"
+                               class="btn btn-default  btn-md">{!! trans('project.show') !!}</a>
+                        </div>
+                        <div class="">
+                            {!! Form::open(array('route' => array('project.destroy', $project->id), 'method' => 'delete')) !!}
+                            <button class='btn btn-default btn-md'
+                                    type="submit">{!! trans('project.delete') !!}</button>
+                            {!! Form::close() !!}</div>
                         &middot;
                     </td>
                 </tr>
