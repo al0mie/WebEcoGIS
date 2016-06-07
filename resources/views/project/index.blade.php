@@ -19,7 +19,10 @@
                     <td>{!! $project->created_at !!}</td>
                     <td class="text-center">
                         <a href="{!! route('project.edit', $project->id) !!}">Edit</a>
-                        <a href="{!! route('project.destroy', $project->id) !!}">Delete</a>
+                        {!! Form::open(array('route' => array('project.destroy', $project->id), 'method' => 'delete')) !!}
+                            <button class='btn btn-danger pull-right btn-xs' type="submit">Delete Template</button>
+                        {!! Form::close() !!}
+
                         &middot;
                     </td>
                 </tr>
