@@ -56,6 +56,14 @@ html, body {
     margin-bottom: 10px !important;
 }
 
+.esri-logo-image {
+    display: none;
+}
+
+.esri-attribution {
+    display: none !important;
+}
+
 .marginBottom-0 {margin-bottom:0;}
 
 .dropdown-submenu{position:relative;}
