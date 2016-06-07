@@ -34,7 +34,9 @@
     </style>
 </head>
 <body id="app-layout">
-@include('layouts.menu')
+@if(Auth::check())
+    @include('layouts.menu')
+@endif
 @yield('content')
 
 </body>
