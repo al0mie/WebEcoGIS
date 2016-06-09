@@ -3,7 +3,6 @@ Homestead.yaml
 Homestead.json
 .idea/
 storage/debugbar/
-
 composer.phar
 /vendor
 composer.lock
