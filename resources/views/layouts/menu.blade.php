@@ -1,5 +1,6 @@
 @include('modal.form_create_project')
 @include('modal.form_add_DEM')
+@include('modal.form_add_init_state')
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -40,7 +41,7 @@
                         <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{!! trans('index.add') !!}</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" data-toggle="modal" data-target="#add-dem">{!! trans('index.add_dem') !!}</a></li>
-                                <li><a href="#">{!! trans('index.add_init_state') !!}</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#add-init-state">{!! trans('index.add_init_state') !!}</a></li>
                                 <li><a href="#">{!! trans('index.add_raster') !!}</a></li>
                             </ul>
                         </li>
