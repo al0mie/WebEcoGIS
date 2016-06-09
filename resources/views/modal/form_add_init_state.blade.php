@@ -15,13 +15,15 @@
                                 <div class="col-sm-12">
                                     <div class="col-sm-4">
                                         <div class="radio">
-                                            <label><input type="radio" name="typeCoordinateDepth" value="grd">GRD </label>
+                                            <label><input type="radio" name="typeCoordinateDepth" value="grd">GRD
+                                            </label>
                                         </div>
                                     </div>
 
                                     <div class="col-sm-4">
                                         <div class="radio">
-                                            <label><input type="radio" name="typeCoordinateDepth" checked>TXT/DAT</label>
+                                            <label><input type="radio" name="typeCoordinateDepth"
+                                                          checked>TXT/DAT</label>
                                         </div>
                                     </div>
                                 </div>
@@ -31,7 +33,8 @@
                                            name="fileDepth">
                                 </div>
                                 <div class="col-sm-12">
-                                    <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5></div>
+                                    <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5>
+                                    </div>
                                     <div class="col-sm-6">
                                         <div class="radio">
                                             <label><input type="radio" name="typeValueDepth"
@@ -70,13 +73,15 @@
 
                                         <div class="col-sm-4">
                                             <div class="radio">
-                                                <label><input type="radio" name="typeSpeedSpeedX" value="grd">GRD </label>
+                                                <label><input type="radio" name="typeSpeedSpeedX" value="grd">GRD
+                                                </label>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-4">
                                             <div class="radio">
-                                                <label><input type="radio" name="typeSpeedSpeedX" checked>TXT/DAT</label>
+                                                <label><input type="radio" name="typeSpeedSpeedX"
+                                                              checked>TXT/DAT</label>
                                             </div>
                                         </div>
                                     </div>
@@ -89,7 +94,8 @@
                                 <br>
 
                                 <div class="col-sm-12">
-                                    <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5></div>
+                                    <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5>
+                                    </div>
                                     <div class="col-sm-6">
                                         <div class="radio">
                                             <label><input type="radio" name="typeValueSpeedX"
@@ -128,13 +134,15 @@
                                     <div class="col-sm-12">
                                         <div class="col-sm-4">
                                             <div class="radio">
-                                                <label><input type="radio" name="typeValueSpeedY" value="grd">GRD </label>
+                                                <label><input type="radio" name="typeValueSpeedY" value="grd">GRD
+                                                </label>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-4">
                                             <div class="radio">
-                                                <label><input type="radio" name="typeValueSpeedY" checked>TXT/DAT</label>
+                                                <label><input type="radio" name="typeValueSpeedY"
+                                                              checked>TXT/DAT</label>
                                             </div>
                                         </div>
                                     </div>
@@ -146,7 +154,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5></div>
+                                <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5>
+                                </div>
                                 <div class="col-sm-6">
                                     <div class="radio">
                                         <label><input type="radio" name="typeValueSpeedY"
