@@ -33,8 +33,12 @@ html, body {
     margin: 0;
 }
 
+body {
+    background: papayawhip;
+}
+
 .navbar {
-    background: lightblue;
+    background: wheat;
     margin: 0;
 }
 
