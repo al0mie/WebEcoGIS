@@ -5,9 +5,9 @@
         <div id="project-container">
         </div>
         <div id="project-properties">
-            <input type="text" value="X: 0" id="coordX"/>
-            <input type="text" value="Y: 0" id="coordY"/>
-            <input type="text" value="Height: 0" id="height"/>
+            <input type="text" value="X: 0" id="coordX" disabled/>
+            <input type="text" value="Y: 0" id="coordY" disabled/>
+            <input type="text" value="Height: 0" id="height" disabled/>
         </div>
     </div>
 
