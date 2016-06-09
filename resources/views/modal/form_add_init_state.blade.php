@@ -31,7 +31,7 @@
                                            name="fileDepth">
                                 </div>
                                 <div class="col-sm-12">
-                                    <div style="text-align: center;">{!! trans('modal_forms.unit_measure') !!}</div>
+                                    <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5></div>
                                     <div class="col-sm-6">
                                         <div class="radio">
                                             <label><input type="radio" name="typeValueDepth"
@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <div style="text-align: center;">{!! trans('modal_forms.unit_measure') !!}</div>
+                                <div style="text-align: center;"><h5>{!! trans('modal_forms.unit_measure') !!}</h5></div>
                                 <div class="col-sm-6">
                                     <div class="radio">
                                         <label><input type="radio" name="typeValueSpeedY"
