@@ -15,18 +15,18 @@
                                 <div class="col-sm-12">
                                     <div class="col-sm-4">
                                         <div class="radio">
-                                            <label><input type="radio" name="grd">GRD </label>
+                                            <label><input type="radio" name="typeCoordinate" value="grd">GRD </label>
                                         </div>
                                     </div>
 
                                     <div class="col-sm-4">
                                         <div class="radio">
-                                            <label><input type="radio" name="text">TXT/DAT</label>
+                                            <label><input type="radio" name="typeCoordinate" checked>TXT/DAT</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="radio">
-                                            <label><input type="radio" name="srtm">SRTM3</label>
+                                            <label><input type="radio" name="typeCoordinate" value="srtm">SRTM3</label>
                                         </div>
                                     </div>
                                 </div>
@@ -45,13 +45,13 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="radio">
-                                                <label><input type="radio" name="useXY">{!! trans('modal_forms.meters')  !!}(x, y)</label>
+                                                <label><input type="radio" name="typeValue" checked>{!! trans('modal_forms.meters')  !!}(x, y)</label>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
                                             <div class="radio">
-                                                <label><input type="radio" name="useBL">{!! trans('modal_forms.gradus')  !!} (B, L)</label>
+                                                <label><input type="radio" name="typeValue" value="useBL">{!! trans('modal_forms.gradus')  !!} (B, L)</label>
                                             </div>
                                         </div>
                                     </div>
