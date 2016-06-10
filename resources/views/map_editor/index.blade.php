@@ -16,7 +16,7 @@
     <script src="http://js.arcgis.com/3.14/"></script>
     <script src="http://github.hubspot.com/offline/offline.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+    <link href="/css/custom_styles.css" rel="stylesheet">
 </head>
 
     <body class="claro">
