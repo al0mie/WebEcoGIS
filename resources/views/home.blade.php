@@ -8,7 +8,7 @@
                     <div class="panel-heading">Welcome to WebEcoGIS</div>
                     <div id="view-div"></div>
                     <script type="text/javascript">
-                        require([
+                            require([
                                     "esri/Map",
                                     "esri/views/SceneView",
                                     "dojo/domReady!"
