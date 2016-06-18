@@ -16,15 +16,18 @@ class ProjectController extends Controller
      * @var
      */
     private $projects;
+    private $projectRepository;
 
     /**
      * HomeController constructor.
+     * @param \App\Repositories\ProjectRepository $repository
      */
-    public function __construct()
+    public function __construct(\App\Repositories\ProjectRepository $projectRepository)
     {
         if (\Auth::check()) {
             $this->projects = Project::where('user_id', \Auth::user()->id)->get();
         }
+        $this->projectRepository = $projectRepository;
     }
 
     /**
