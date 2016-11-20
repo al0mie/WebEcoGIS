@@ -37,7 +37,9 @@ class CreatePhysicalFactorsTable extends Migration
             $table->float('wind_coef')->nullable();
             $table->float('density_air_water')->nullable();
 
-            $table->rememberToken();
+            $table->foreign('project_id')->references('id')->on('projects')
+                ->onDelete('set null');
+
             $table->timestamps();
         });
     }

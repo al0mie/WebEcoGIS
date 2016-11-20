@@ -20,20 +20,17 @@
                     <td>{!! $project->created_at !!}</td>
                     <td>{!! $project->updated_at !!}</td>
                     <td>
-                        <div class="">
+                        <div class="box">
                             <a href="{!! route('project.edit', $project->id) !!}"
                                class="btn btn-default  btn-md">{!! trans('project.edit') !!}</a>
-                        </div>
-                        <div class="">
+
+
                             <a href="{!! route('project.show', $project->id) !!}"
-                               class="btn btn-default  btn-md">{!! trans('project.show') !!}</a>
-                        </div>
-                        <div class="">
-                            {!! Form::open(array('route' => array('project.destroy', $project->id), 'method' => 'delete')) !!}
-                            <button class='btn btn-default btn-md'
-                                    type="submit">{!! trans('project.delete') !!}</button>
-                            {!! Form::close() !!}</div>
-                        &middot;
+                               class="btn btn-success  btn-md">{!! trans('project.show') !!}</a>
+
+                            <a href="{!! route('project.show', $project->id) !!}"
+                               class="btn btn-danger  btn-md">{!! trans('project.delete') !!}</a>
+                      </div>
                     </td>
                 </tr>
                 <?php $no++;?>
