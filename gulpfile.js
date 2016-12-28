@@ -1,5 +1,20 @@
 var elixir = require('laravel-elixir');
-
+    gulp = require('gulp'),
+    uglify = require('gulp-uglify'),
+    rename = require("gulp-rename"),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
+    cleanCSS = require('gulp-clean-css'),
+    handlebars = require('gulp-handlebars'),
+    wrap = require('gulp-wrap'),
+    declare = require('gulp-declare'),
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer'),
+    util = require('gulp-util'),
+    del = require('del'),
+// debug = require('gulp-debug'),
+    concat = require('gulp-concat');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
