@@ -13,8 +13,33 @@ var elixir = require('laravel-elixir');
     buffer = require('vinyl-buffer'),
     util = require('gulp-util'),
     del = require('del'),
-// debug = require('gulp-debug'),
     concat = require('gulp-concat');
+
+var appNamespace = 'APP';
+
+
+gulp.task('tmpl', function () {
+    return gulp.src('resources/assets/templates/**/*.hbs')
+        .pipe(handlebars({
+            handlebars: require('handlebars')
+        }))
+        .pipe(wrap('Handlebars.template(<%= contents %>)'))
+        .pipe(declare({
+            namespace: appNamespace,
+            noRedeclare: true
+        }))
+        .pipe(concat('templates.js'))
+        .pipe(wrap('module.exports = function(Handlebars) { <%= contents %> return this["' + appNamespace + '"];};'))
+         .pipe(gulp.dest('resources/assets/js/app'));
+});
+
+
+gulp.task('sass', function () {
+
+});
+
+
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
