@@ -20,15 +20,6 @@ Route::get('auth/socialite/{provider}', 'Auth\AuthController@redirectToProvider'
 Route::get('auth/callback/{provider}', 'Auth\AuthController@handleProviderCallback');
 
 /**
- * Welcome page
- */
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
-/**
  * Language routes
  */
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
@@ -39,7 +30,7 @@ Route::group(['middleware' => App\Http\Middleware\Authenticate::class,], functio
     /**
      * Home page
      */
-    Route::get('/home', 'HomeController@index');
+    Route::get('/', 'HomeController@index');
 
     /**
      * Editor page
