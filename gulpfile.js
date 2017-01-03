@@ -30,7 +30,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('resources/assets/sass/index.scss')
+    return gulp.src('resources/assets/sass/app.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: [
@@ -102,6 +102,6 @@ gulp.task('css-concat', ['sass'], function () {
         .pipe(gulp.dest('public/css'));
 });
 
-var tasks = ['clean', 'js:firstrun', 'sass', 'copy', 'css-concat'];
+var tasks = ['clean', 'js:firstrun', 'sass', 'copy'];
 tasks.push('watch');
 gulp.task('default', tasks);
