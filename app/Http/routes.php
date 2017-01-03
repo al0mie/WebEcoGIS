@@ -24,13 +24,14 @@ Route::get('auth/callback/{provider}', 'Auth\AuthController@handleProviderCallba
  */
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
 
+/**
+ * Home page
+ */
+Route::get('/', 'HomeController@index');
 
-Route::group(['middleware' => App\Http\Middleware\Authenticate::class,], function () {
+Route::group(['prefix' => 'api/v1'], function () {
 
-    /**
-     * Home page
-     */
-    Route::get('/', 'HomeController@index');
+
 
     /**
      * Editor page
