@@ -14,7 +14,7 @@ class MakeProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->unsigned()->nullable();
+            $table->integer('user_id')->unsigned();
             $table->string('name');
             $table->string('coordinate_transform')->nullable();
             $table->enum('coordinate_type', array('geographical_type', 'rectangle_type'))->nullable();
@@ -26,11 +26,8 @@ class MakeProjectsTable extends Migration
             $table->integer('number_elementX')->nullable();
             $table->integer('number_elementY')->nullable();
             $table->integer('absolute_height')->nullable();
-            $table->rememberToken();
             $table->timestamps();
-        });
 
-        Schema::table('projects', function (Blueprint $table) {
             $table->foreign('user_id')->references('id')->on('users')
                 ->onDelete('set null');
         });

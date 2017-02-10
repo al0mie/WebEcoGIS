@@ -19,9 +19,7 @@ class CreateDemTable extends Migration
             $table->string('file_url')->nullable();
             $table->rememberToken();
             $table->timestamps();
-        });
-
-        Schema::table('dem', function (Blueprint $table) {
+            
             $table->foreign('project_id')->references('id')->on('projects')
                 ->onDelete('set null');
         });
@@ -29,6 +27,7 @@ class CreateDemTable extends Migration
 
     /**
      * Reverse the migrations.
+     *
      *
      * @return void
      */

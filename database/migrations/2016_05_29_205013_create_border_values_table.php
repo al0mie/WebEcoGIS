@@ -21,9 +21,7 @@ class CreateBorderValuesTable extends Migration
             $table->float('angle_normal_vector_liquid')->nullable();
             $table->rememberToken();
             $table->timestamps();
-        });
 
-        Schema::table('border_settings', function (Blueprint $table) {
             $table->foreign('project_id')->references('id')->on('projects')
                 ->onDelete('set null');
         });
